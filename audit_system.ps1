@@ -1,7 +1,3 @@
-# 1. Configuracao dinamica do arquivo de saida (Salva com Data e Hora para nao sobrescrever)
-#$DataAtual = Get-Date -Format "dd_MM_yyyy_HHmm"
-#$LogPath = "$env:USERPROFILE\Desktop\relatorio_seguranca_$DataAtual.txt"
-####################################################################################################
 # 1. Configuracao dinamica e universal do arquivo de saida (Mapeia OneDrive ou Local de forma nativa)
 try {
     # Tenta ler o caminho real da Area de Trabalho usando o Objeto Shell nativo do Windows (0 = Desktop)
