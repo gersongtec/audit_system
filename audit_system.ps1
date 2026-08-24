@@ -53,7 +53,7 @@ function Perguntar-Correcao ($Titulo, $Resumo, $Acao) {
             $RespostaLimpa = $Resposta.Trim().ToUpper()
             if ($RespostaLimpa -eq "S") { return $true }
             if ($RespostaLimpa -eq "N") {
-                Write-Host "[-] Correcao pulada pelo usuario. Avancando para o proximo bloco..." -ForegroundColor Gray
+                Write-Host "[-] Correcao ignorada pelo usuario. Avancando para o proximo bloco..." -ForegroundColor Gray
                 return $false
             }
         }
